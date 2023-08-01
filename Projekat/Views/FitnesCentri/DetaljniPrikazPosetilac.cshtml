@@ -1,0 +1,89 @@
+﻿@using Projekat.Models;
+
+@{
+    Layout = "~/Views/Shared/_PosetilacLayout.cshtml";
+}
+
+@{
+
+    ViewBag.Title = "DetaljniPrikaz";
+}
+
+<h2 class="klasaNaslov">Detaljni Prikaz</h2>
+
+
+<table border="1" class="klasa2">
+    <tr>
+        <th>Naziv</th>
+        <th>Adresa</th>
+        <th>Godina otvaranja</th>
+        <th>Vlasnik</th>
+        <th>Cena mesecne clanarine</th>
+        <th>Cena godisnje clanarine</th>
+        <th>Cena jednog treninga</th>
+        <th>Cena grupnog treninga</th>
+        <th>Cena personalnog treninga</th>
+    </tr>
+
+    @foreach (FitnesCentar fs in @ViewBag.NovaLista)
+    {
+        <tr>
+            <td style="text-align:center">@fs.Naziv</td>
+            <td style="text-align:center">@fs.Adresa</td>
+            <td style="text-align:center">@fs.GodinaOtvaranja</td>
+            <td style="text-align:center">@fs.Vlasnik</td>
+            <td style="text-align:center">@fs.CenaMesecneClanarine</td>
+            <td style="text-align:center">@fs.CenaGodisnjeClanarine</td>
+            <td style="text-align:center">@fs.CenaJednogTreninga</td>
+            <td style="text-align:center">@fs.CenaGrupnogTreninga</td>
+            <td style="text-align:center">@fs.CenaPersonalnogTreninga</td>
+
+        </tr>
+    }
+
+</table>
+
+<h2 class="klasaNaslov">Predstojeci grupni treninzi u ovom fitnes centru</h2>
+
+<table border="1" class="klasa2">
+    <tr>
+        <th>Naziv</th>
+        <th>Tip treninga</th>
+        <th>Trajanje treninga</th>
+        <th>Datum i vreme treninga</th>
+        <th>Maksimalan broj posetilaca</th>
+        <th>Ukupan broj prijavljenih posetilaca</th>
+    </tr>
+    @foreach (GrupniTrening gt in @ViewBag.NovaLista2)
+    {
+        <tr>
+            <td style="text-align:center">@gt.Naziv</td>
+            <td style="text-align:center">@gt.TipTreninga</td>
+            <td style="text-align:center">@gt.TrajanjeTreninga</td>
+            <td style="text-align:center">@gt.DatumIVremeTreninga</td>
+            <td style="text-align:center">@gt.MaksimalanBrojPosetilaca</td>
+            <td style="text-align:center">@gt.SpisakPosetilaca.Count</td>
+            <td class="klasaDugme"><a href="~/Posetilac/PrijavaNaTreningPosetilac?idGrupnogTreninga=@gt.IDGrupnogTreninga">Prijavi se</a></td>
+        </tr>
+    }
+</table>
+
+<h2 class="klasaNaslov">Komentari za ovaj fitnes centar</h2>
+
+<table class="klasa2">
+    <tr>
+        <th>Posetilac koji je ostavio komentar</th>
+        <th>Komentar</th>
+        <th>Ocena od srane posetioca</th>
+    </tr>
+    @foreach (Komentar k in @ViewBag.NovaLista3)
+    {
+        <tr>
+            <td style="text-align:center">@k.Posetilac</td>
+            <td style="text-align:center">@k.Tekst</td>
+            <td style="text-align:center">@k.Ocena</td>
+        </tr>
+    }
+</table>
+
+

@@ -1,0 +1,95 @@
+﻿@using Projekat.Models;
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+
+    ViewBag.Title = "FitnesCentri";
+}
+
+<p class="klasaUpozorenje">@ViewBag.Message</p>
+
+<h1 class="klasaNaslov"><font style="color:brown">Fitnes centri</font></h1>
+
+<table border="1" class="klasa2">
+    <tr>
+        <th>Naziv</th>
+        <th>Adresa</th>
+        <th>Godina otvaranja</th>
+    </tr>
+
+    @foreach (FitnesCentar fs in @ViewBag.ListaFitnesCentara)
+    {
+        <tr>
+            <td>@fs.Naziv</td>
+            <td>@fs.Adresa</td>
+            <td>@fs.GodinaOtvaranja</td>
+            <td class="klasaDugme"><a href="~/Home/DetaljniPrikaz?idFitnesCentra=@fs.IDFitnesCentra">Detalji</a></td>
+        </tr>
+    }
+</table>
+
+<h2 class="klasaNaslov"><font style="color:brown">Pretražite fitnes centre</font></h2>
+<form action="~/Home/PretragaFitnesCentara" method="post">
+    <table class="klasa1">
+        <tr>
+            <th>Naziv</th>
+            <th>Adresa</th>
+            <th>Minimalna granica za godinu</th>
+            <th>Maksimalna granica za godinu</th>
+        </tr>
+        <tr>
+            <td style="text-align:center">
+                <input type="text" name="naziv" />
+            </td>
+            <td style="text-align:center">
+                <input type="text" name="adresa" />
+            </td>
+            <td style="text-align:center">
+                <input type="number" name="minimalnaGranica" />
+            </td>
+            <td style="text-align:center">
+                <input type="number" name="maksimalnaGranica" />
+            </td>
+            <td>
+                <input type="submit" value="Pretražite" />
+            </td>
+        </tr>
+    </table>
+</form>
+
+<br /><br />
+
+<table class="klasa1">
+    <tr>
+        <th colspan="2">Sortiraj po nazivu</th>
+    </tr>
+    <tr>
+        <td><a href="~/Home/SortirajPoNazivuRastuce">RASTUĆE</a></td>
+        <td><a href="~/Home/SortirajPoNazivuOpadajuce">OPADAJUĆE </a></td>
+    </tr>
+</table>
+<br />
+<table class="klasa1">
+    <tr>
+        <th colspan="2">Sortiraj po adresi</th>
+    </tr>
+    <tr>
+        <td><a href="~/Home/SortirajPoAdresiRastuce">RASTUĆE</a></td>
+        <td><a href="~/Home/SortirajPoAdresiOpadajuce">OPADAJUĆE </a></td>
+    </tr>
+</table>
+<br />
+<table class="klasa1">
+    <tr>
+        <th colspan="2">Sortiraj po godini otvaranja</th>
+    </tr>
+    <tr>
+        <td><a href="~/Home/SortirajPoGodiniRastuce">RASTUĆE</a></td>
+        <td><a href="~/Home/SortirajPoGodiniOpadajuce">OPADAJUĆE </a></td>
+    </tr>
+</table>
+
+
+

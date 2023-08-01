@@ -1,0 +1,57 @@
+﻿@using Projekat.Models;
+@model FitnesCentar
+@{
+    Layout = "~/Views/Shared/_VlasnikLayout.cshtml";
+}
+@{
+    ViewBag.Title = "Kreiranje Fitnes Centara";
+}
+
+<h2 class="klasaNaslov">Kreiranje Fitnes Centra</h2>
+<p class="klasaUpozorenje">@ViewBag.Message</p>
+
+<form action="~/Vlasnik/CuvanjeFitnesCentra" method="post">
+    <table class="klasa1">
+        <tr>
+            <td>ID fitnes centra:</td>
+            <td><input type="number" name="id" /></td>
+        </tr>
+        <tr>
+            <td>Naziv:</td>
+            <td><input type="text" name="naziv" /></td>
+        </tr>
+        <tr>
+            <td>Adresa:</td>
+            <td><input type="text" name="adresa" /></td>
+        </tr>
+        <tr>
+            <td>Godina otvaranja:</td>
+            <td><input type="number" name="godinaOtvaranja" /></td>
+        </tr>
+        <tr>
+            <td>Cena mesečne članarine:</td>
+            <td><input type="number" name="cenaMesecneClanarine" /></td>
+        </tr>
+        <tr>
+            <td>Cena godišnje članarine:</td>
+            <td><input type="number" name="cenaGodisnjeClanarine" /></td>
+        </tr>
+        <tr>
+            <td>Cena jednog treninga:</td>
+            <td><input type="number" name="cenaJednogTreninga" /></td>
+        </tr>
+        <tr>
+            <td>Cena grupnog treninga:</td>
+            <td><input type="number" name="cenaGrupnogTreninga" /></td>
+        </tr>
+        <tr>
+            <td>Cena personalnog treninga:</td>
+            <td><input type="number" name="cenaPersonalnogTreninga" /></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Kreiraj" />
+            </td>
+        </tr>
+    </table>
+</form>

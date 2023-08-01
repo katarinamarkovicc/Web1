@@ -1,0 +1,81 @@
+[
+  
+  {
+    "Naziv": "Jump & Pump",
+    "Adresa": "Gogoljeva 15, Novi Sad, 21000",
+    "GodinaOtvaranja": 2011,
+    "Vlasnik": "vlasnik1",
+    "CenaMesecneClanarine": 3000,
+    "CenaGodisnjeClanarine": 10000,
+    "CenaJednogTreninga": 300,
+    "CenaGrupnogTreninga": 400,
+    "CenaPersonalnogTreninga": 1000,
+    "Brisanje": false,
+    "IDFitnesCentra": 1111
+  },
+  {
+    "Naziv": "Gereya",
+    "Adresa": "Futoska 12, Novi Sad, 21000",
+    "GodinaOtvaranja": 2021,
+    "Vlasnik": "vlasnik1",
+    "CenaMesecneClanarine": 3500,
+    "CenaGodisnjeClanarine": 10000,
+    "CenaJednogTreninga": 250,
+    "CenaGrupnogTreninga": 450,
+    "CenaPersonalnogTreninga": 1500,
+    "Brisanje": false,
+    "IDFitnesCentra": 2222
+  },
+  {
+    "Naziv": "Non Stop Fitness",
+    "Adresa": "Narodnih Heroja 1, Novi Sad, 21000",
+    "GodinaOtvaranja": 2018,
+    "Vlasnik": "vlasnik2",
+    "CenaMesecneClanarine": 3200,
+    "CenaGodisnjeClanarine": 10000,
+    "CenaJednogTreninga": 400,
+    "CenaGrupnogTreninga": 500,
+    "CenaPersonalnogTreninga": 1500,
+    "Brisanje": false,
+    "IDFitnesCentra": 3333
+  },
+  {
+    "Naziv": "Gladiator",
+    "Adresa": "Djordja Servickog 5, Novi Sad, 21000",
+    "GodinaOtvaranja": 2019,
+    "Vlasnik": "vlasnik2",
+    "CenaMesecneClanarine": 3000,
+    "CenaGodisnjeClanarine": 10000,
+    "CenaJednogTreninga": 300,
+    "CenaGrupnogTreninga": 400,
+    "CenaPersonalnogTreninga": 1000,
+    "Brisanje": false,
+    "IDFitnesCentra": 4444
+  },
+  {
+    "Naziv": "Bestfit 24h",
+    "Adresa": "Bulevar Cara Lazara 2, Novi Sad, 21000",
+    "GodinaOtvaranja": 2013,
+    "Vlasnik": "vlasnik3",
+    "CenaMesecneClanarine": 3000,
+    "CenaGodisnjeClanarine": 10000,
+    "CenaJednogTreninga": 300,
+    "CenaGrupnogTreninga": 400,
+    "CenaPersonalnogTreninga": 1000,
+    "Brisanje": false,
+    "IDFitnesCentra": 5555
+  },
+  {
+    "Naziv": "Fitbox",
+    "Adresa": "1300 Kaplara 3, Novi Sad, 21000",
+    "GodinaOtvaranja": 2018,
+    "Vlasnik": "vlasnik3",
+    "CenaMesecneClanarine": 3500,
+    "CenaGodisnjeClanarine": 15000,
+    "CenaJednogTreninga": 400,
+    "CenaGrupnogTreninga": 600,
+    "CenaPersonalnogTreninga": 1500,
+    "Brisanje": false,
+    "IDFitnesCentra": 6666
+  }
+]

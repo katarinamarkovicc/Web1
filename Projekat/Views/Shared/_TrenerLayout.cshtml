@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Fitnes centri</title>
+    <link href="~/Content/Style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div>
+        <table class="klasa2">
+            <tr>
+                <td><a href="~/FitnesCentri/PregledProfilaTrener">Profil</a></td>
+                <td><a href="~/FitnesCentri/FitnesCentriTrener">Svi fitnes centri</a></td>
+                <td><a href="~/Trener/PregledGrupnihTreninga">Pregled svih grupnih treninga</a></td>
+                <td><a href="~/Trener/KreiranjeTreninga">Kreiraj novi trening</a></td>
+                <td><a href="~/Trener/PregledProslihGrupnihTreninga">Pregled prošlih grupnih treninga</a></td>
+                <td><a href="~/Register/LogOut">Logout</a></td>
+
+            </tr>
+        </table>
+    </div>
+
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Fitnes Centri</p>
+        </footer>
+    </div>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+</body>
+</html>

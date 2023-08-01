@@ -1,0 +1,50 @@
+﻿@using Projekat.Models;
+@model GrupniTrening
+@{
+    Layout = "~/Views/Shared/_TrenerLayout.cshtml";
+}
+@{
+    ViewBag.Title = "Modifikacija Treninga";
+}
+
+<h2 class="klasaNaslov">Modifikacija Treninga</h2>
+
+
+
+<form action="~/Trener/ModifikacijaPosleForme" method="post">
+    <table class="klasa1">
+        <tr>
+            <td>Naziv:</td>
+            <td><input type="text" name="naziv" /></td>
+        </tr>
+        <tr>
+            <td>Tip treninga:</td>
+            <td>
+                <select name="tipTreninga">
+                    <option value=""></option>
+                    <option>YOGA</option>
+                    <option>LESS_MILLS_TONE</option>
+                    <option>BODY_PUMP</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Trajanje treninga:</td>
+            <td><input type="number" name="trajanjeTreninga" /></td>
+        </tr>
+        <tr>
+            <td>Datum i vreme treninga:</td>
+            <td><input type="date" name="datumIVremeTreninga" /></td>
+        </tr>
+        <tr>
+            <td>Maksimalan broj posetilaca:</td>
+            <td><input type="number" name="maksimalanBrojPosetilaca" /></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="text" name="idKojiTrebaDaSeMenja" value="@Model.IDGrupnogTreninga" hidden />
+                <input type="submit" value="Izmeni" />
+            </td>
+        </tr>
+    </table>
+</form>

@@ -1,0 +1,56 @@
+﻿@using Projekat.Models;
+@{
+    Layout = "~/Views/Shared/_VlasnikLayout.cshtml";
+}
+@{
+    ViewBag.Title = "Registracija Trenera";
+}
+
+<h2 class="klasaNaslov">Registracija Trenera</h2>
+
+<p class="klasaUpozorenje">@ViewBag.Message</p>
+
+<form action="~/Vlasnik/RegistrujTrenera" method="post">
+    <table class="klasa1">
+        <tr>
+            <td>Korisničko ime:</td>
+            <td><input type="text" name="korisnickoIme" /></td>
+        </tr>
+        <tr>
+            <td>Lozinka:</td>
+            <td><input type="password" name="lozinka" /></td>
+        </tr>
+        <tr>
+            <td>Ime:</td>
+            <td><input type="text" name="ime" /></td>
+        </tr>
+        <tr>
+            <td>Prezime:</td>
+            <td><input type="text" name="prezime" /></td>
+        </tr>
+        <tr>
+            <td>Pol:</td>
+            <td>
+                <select name="pol">
+                    <option>MUŠKI</option>
+                    <option>ŽENSKI</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="text" name="email" /></td>
+        </tr>
+        <tr>
+            <td>Datum rodjenja: </td>
+            <td><input type="date" name="datumRodjenja" /></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Registruj" />
+            </td>
+        </tr>
+    </table>
+</form>
+
+

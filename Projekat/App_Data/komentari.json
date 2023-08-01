@@ -1,0 +1,27 @@
+﻿[
+  {
+    "Posetilac": "posetilac4",
+    "FitnesCentar": 3333,
+    "Tekst": "Odlično!",
+    "Ocena": 5
+  },
+  {
+    "Posetilac": "posetilac3",
+    "FitnesCentar": 3333,
+    "Tekst": "Vrlo dobro!",
+    "Ocena": 4
+  },
+  {
+    "Posetilac": "posetilac1",
+    "FitnesCentar": 2222,
+    "Tekst": "Prosečno!",
+    "Ocena": 2
+  },
+  {
+    "Posetilac": "posetilac2",
+    "FitnesCentar": 1111,
+    "Tekst": "Dobro!",
+    "Ocena": 3
+  }
+
+]

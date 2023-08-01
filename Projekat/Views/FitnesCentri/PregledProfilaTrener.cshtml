@@ -1,0 +1,35 @@
+﻿@using Projekat.Models;
+@model Korisnik
+@{
+    Layout = "~/Views/Shared/_TrenerLayout.cshtml";
+}
+@{
+    ViewBag.Title = "Pregled Profila";
+}
+
+<p class="klasaUpozorenje">@ViewBag.Message</p>
+
+<h2 class="klasaNaslov">Pregled Profila</h2>
+
+<table border="1" class="klasa2">
+    <tr>
+        <th>KorisnickoIme</th>
+        <th>Ime</th>
+        <th>Prezime</th>
+        <th>Pol</th>
+        <th>Email</th>
+        <th>DatumRodjenja</th>
+        <th>Uloga</th>
+    </tr>
+    <tr>
+        <td style="text-align:center">@Model.KorisnickoIme</td>
+        <td style="text-align:center">@Model.Ime</td>
+        <td style="text-align:center">@Model.Prezime</td>
+        <td style="text-align:center">@Model.Pol.ToString()</td>
+        <td style="text-align:center">@Model.Email</td>
+        <td style="text-align:center">@Model.DatumRodjenja.Year/@Model.DatumRodjenja.Month/@Model.DatumRodjenja.Day</td>
+        <td style="text-align:center">@Model.Uloga.ToString()</td>
+    </tr>
+</table>
+
+<p class="klasaDugme"><a href="~/FitnesCentri/IzmenaProfila">Uredi profil</a></p>

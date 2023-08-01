@@ -1,0 +1,179 @@
+[
+  
+  {
+    "Naziv": "Grupni Trening 1",
+    "TipTreninga": 2,
+    "FitnesCentar": 1111,
+    "TrajanjeTreninga": 60,
+    "DatumIVremeTreninga": "2022-07-30T21:00:00",
+    "MaksimalanBrojPosetilaca": 10,
+    "SpisakPosetilaca": [ "posetilac1", "posetilac2" ],
+    "Brisanje": false,
+    "IDGrupnogTreninga": 1111
+  },
+  {
+    "Naziv": "Grupni Trening 2",
+    "TipTreninga": 1,
+    "FitnesCentar": 2222,
+    "TrajanjeTreninga": 50,
+    "DatumIVremeTreninga": "2021-05-01T21:00:00",
+    "MaksimalanBrojPosetilaca": 15,
+    "SpisakPosetilaca": [ "posetilac1", "posetilac3" ],
+    "Brisanje": false,
+    "IDGrupnogTreninga": 2222
+  },
+  {
+    "Naziv": "Grupni Trening 3",
+    "TipTreninga": 0,
+    "FitnesCentar": 3333,
+    "TrajanjeTreninga": 45,
+    "DatumIVremeTreninga": "2021-08-29T22:00:00",
+    "MaksimalanBrojPosetilaca": 10,
+    "SpisakPosetilaca": [ "posetilac2", "posetilac3", "posetilac1", "posetilac5", "tanja123" ],
+    "Brisanje": false,
+    "IDGrupnogTreninga": 3333
+  },
+  {
+    "Naziv": "Grupni trening 4",
+    "TipTreninga": 1,
+    "FitnesCentar": 3333,
+    "TrajanjeTreninga": 60,
+    "DatumIVremeTreninga": "2022-09-30T20:00:00",
+    "MaksimalanBrojPosetilaca": 3,
+    "SpisakPosetilaca": [],
+    "Brisanje": false,
+    "IDGrupnogTreninga": 4444
+  },
+  {
+    "Naziv": "Grupni Trening 5",
+    "TipTreninga": 2,
+    "FitnesCentar": 3333,
+    "TrajanjeTreninga": 90,
+    "DatumIVremeTreninga": "2022-08-10T17:00:00",
+    "MaksimalanBrojPosetilaca": 4,
+    "SpisakPosetilaca": [ "posetilac1", "posetilac4", "posetilac3", "tanja123" ],
+    "Brisanje": false,
+    "IDGrupnogTreninga": 5555
+  },
+  {
+    "Naziv": "Grupni Trening 6",
+    "TipTreninga": 1,
+    "FitnesCentar": 1111,
+    "TrajanjeTreninga": 90,
+    "DatumIVremeTreninga": "2022-08-10T17:00:00",
+    "MaksimalanBrojPosetilaca": 5,
+    "SpisakPosetilaca": [ "tanja123" ],
+    "Brisanje": false,
+    "IDGrupnogTreninga": 6666
+  },
+  {
+    "Naziv": "Grupni Trening 7",
+    "TipTreninga": 0,
+    "FitnesCentar": 1111,
+    "TrajanjeTreninga": 80,
+    "DatumIVremeTreninga": "2022-10-11T17:00:00",
+    "MaksimalanBrojPosetilaca": 4,
+    "SpisakPosetilaca": [ "tanja123" ],
+    "Brisanje": false,
+    "IDGrupnogTreninga": 7777
+  },
+  {
+    "Naziv": "Grupni trening 8",
+    "TipTreninga": 2,
+    "FitnesCentar": 2222,
+    "TrajanjeTreninga": 70,
+    "DatumIVremeTreninga": "2021-07-23T00:00:00",
+    "MaksimalanBrojPosetilaca": 10,
+    "SpisakPosetilaca": [ "posetilac1", "posetilac4" ],
+    "Brisanje": false,
+    "IDGrupnogTreninga": 8888
+  },
+  {
+    "Naziv": "Grupni Trening 9",
+    "TipTreninga": 0,
+    "FitnesCentar": 2222,
+    "TrajanjeTreninga": 60,
+    "DatumIVremeTreninga": "2022-10-07T21:00:00",
+    "MaksimalanBrojPosetilaca": 15,
+    "SpisakPosetilaca": [ "posetilac1", "posetilac4" ],
+    "Brisanje": false,
+    "IDGrupnogTreninga": 9999
+  },
+  {
+    "Naziv": "Grupni Trening 10",
+    "TipTreninga": 0,
+    "FitnesCentar": 4444,
+    "TrajanjeTreninga": 60,
+    "DatumIVremeTreninga": "2022-01-01T21:00:00",
+    "MaksimalanBrojPosetilaca": 15,
+    "SpisakPosetilaca": [],
+    "Brisanje": false,
+    "IDGrupnogTreninga": 10
+  },
+  {
+    "Naziv": "Grupni Trening 11",
+    "TipTreninga": 1,
+    "FitnesCentar": 4444,
+    "TrajanjeTreninga": 90,
+    "DatumIVremeTreninga": "2022-08-01T22:00:00",
+    "MaksimalanBrojPosetilaca": 10,
+    "SpisakPosetilaca": [],
+    "Brisanje": false,
+    "IDGrupnogTreninga": 11
+  },
+  {
+    "Naziv": "Grupni Trening 12",
+    "TipTreninga": 2,
+    "FitnesCentar": 4444,
+    "TrajanjeTreninga": 70,
+    "DatumIVremeTreninga": "2021-08-01T22:00:00",
+    "MaksimalanBrojPosetilaca": 10,
+    "SpisakPosetilaca": [ "posetilac2", "posetilac3" ],
+    "Brisanje": false,
+    "IDGrupnogTreninga": 12
+  },
+  {
+    "Naziv": "Grupni Trening 13",
+    "TipTreninga": 1,
+    "FitnesCentar": 4444,
+    "TrajanjeTreninga": 70,
+    "DatumIVremeTreninga": "2022-09-01T17:00:00",
+    "MaksimalanBrojPosetilaca": 7,
+    "SpisakPosetilaca": [ "posetilac1", "posetilac5" ],
+    "Brisanje": false,
+    "IDGrupnogTreninga": 13
+  },
+  {
+    "Naziv": "Grupni Trening 14",
+    "TipTreninga": 1,
+    "FitnesCentar": 5555,
+    "TrajanjeTreninga": 70,
+    "DatumIVremeTreninga": "2022-02-01T17:00:00",
+    "MaksimalanBrojPosetilaca": 7,
+    "SpisakPosetilaca": [],
+    "Brisanje": false,
+    "IDGrupnogTreninga": 14
+  },
+  {
+    "Naziv": "Grupni Trening 15",
+    "TipTreninga": 2,
+    "FitnesCentar": 5555,
+    "TrajanjeTreninga": 50,
+    "DatumIVremeTreninga": "2021-09-01T17:00:00",
+    "MaksimalanBrojPosetilaca": 9,
+    "SpisakPosetilaca": [],
+    "Brisanje": false,
+    "IDGrupnogTreninga": 15
+  },
+  {
+    "Naziv": "Grupni Trening 16",
+    "TipTreninga": 1,
+    "FitnesCentar": 6666,
+    "TrajanjeTreninga": 70,
+    "DatumIVremeTreninga": "2023-09-01T17:00:00",
+    "MaksimalanBrojPosetilaca": 7,
+    "SpisakPosetilaca": [],
+    "Brisanje": false,
+    "IDGrupnogTreninga": 16
+  }
+]

@@ -1,0 +1,35 @@
+﻿@using Projekat.Models;
+@{
+    Layout = "~/Views/Shared/_TrenerLayout.cshtml";
+}
+@{
+    ViewBag.Title = "VidiPosetioce";
+}
+
+<h2 class="klasaNaslov">Vidi Posetioce</h2>
+
+<table border="1" class="klasa2">
+    <tr>
+        <th>KorisnickoIme</th>
+        <th>Ime</th>
+        <th>Prezime</th>
+        <th>Pol</th>
+        <th>Email</th>
+        <th>DatumRodjenja</th>
+    </tr>
+    
+        @foreach (Korisnik k in @ViewBag.ListaKorisnika)
+        { 
+            <tr>
+                 <td style="text-align:center">@k.KorisnickoIme</td>
+                 <td style="text-align:center">@k.Ime</td>
+                 <td style="text-align:center">@k.Prezime</td>
+                 <td style="text-align:center">@k.Pol.ToString()</td>
+                 <td style="text-align:center">@k.Email</td>
+                 <td style="text-align:center">@k.DatumRodjenja.Year/@k.DatumRodjenja.Month/@k.DatumRodjenja.Day</td>
+            </tr>
+        }
+
+   
+</table>
+

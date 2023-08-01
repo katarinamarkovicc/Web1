@@ -1,0 +1,99 @@
+﻿@using Projekat.Models;
+
+@{
+    Layout = "~/Views/Shared/_PosetilacLayout.cshtml";
+}
+@{
+    ViewBag.Title = "Raniji Grupni Treninzi";
+}
+<p class="klasaUpozorenje">@ViewBag.Message</p>
+
+<h2 class="klasaNaslov">Raniji grupni treninzi</h2>
+
+<table border="1" class="klasa2">
+    <tr>
+        <th>Naziv</th>
+        <th>Tip treninga</th>
+        <th>Trajanje treninga</th>
+        <th>Datum i vreme treninga</th>
+        <th>Maksimalan broj posetilaca</th>
+        <th>Ukupan broj prijavljenih posetilaca</th>
+    </tr>
+    @foreach (GrupniTrening gt in @ViewBag.NovaLista)
+    {
+        <tr>
+            <td style="text-align:center">@gt.Naziv</td>
+            <td style="text-align:center">@gt.TipTreninga</td>
+            <td style="text-align:center">@gt.TrajanjeTreninga</td>
+            <td style="text-align:center">@gt.DatumIVremeTreninga</td>
+            <td style="text-align:center">@gt.MaksimalanBrojPosetilaca</td>
+            <td style="text-align:center">@gt.SpisakPosetilaca.Count</td>
+        </tr>
+    }
+</table>
+
+<h3 class="klasaNaslov"><font style="color:brown">Pretražite ranije treninge</font></h3>
+<form action="~/Posetilac/Pretraga" method="post">
+    <table class="klasa1">
+        <tr>
+            <th>Naziv</th>
+            <th>Tip treninga</th>
+            <th>Naziv fitnes centra</th>
+        </tr>
+        <tr>
+            <td style="text-align:center">
+                <input type="text" name="naziv" />
+            </td>
+            <td style="text-align:center">
+                <select name="tipTreninga">
+                    <option value=""></option>
+                    <option>YOGA</option>
+                    <option>LESS_MILLS_TONE</option>
+                    <option>BODY_PUMP</option>
+                </select>
+            </td>
+            <td>
+                <input type="text" name="fitnesCentar" />
+            </td>
+            <td class="klasaDugme">
+                <input type="submit" value="Pretražite" />
+            </td>
+        </tr>
+    </table>
+</form>
+
+<br /><br />
+
+<table class="klasa1">
+    <tr>
+        <th colspan="2">Sortiraj po nazivu</th>
+    </tr>
+    <tr>
+        <td><a href="~/Posetilac/SortirajPoNazivuRastuce">RASTUĆE</a></td>
+        <td><a href="~/Posetilac/SortirajPoNazivuOpadajuce">OPADAJUĆE </a></td>
+    </tr>
+</table>
+<br />
+<table class="klasa1">
+    <tr>
+        <th colspan="2">Sortiraj po tipu treninga</th>
+    </tr>
+    <tr>
+        <td><a href="~/Posetilac/SortirajPoTipuTreningaRastuce">RASTUĆE</a></td>
+        <td><a href="~/Posetilac/SortirajPoTipuTreningaOpadajuce">OPADAJUĆE </a></td>
+    </tr>
+</table>
+<br />
+<table class="klasa1">
+    <tr>
+        <th colspan="2">Sortiraj po datumu i vremenu održavanja treninga</th>
+    </tr>
+    <tr>
+        <td style="text-align:center"><a href="~/Posetilac/SortirajPoDatumuIVremenuRastuce">RASTUĆE</a></td>
+        <td style="text-align:center"><a href="~/Posetilac/SortirajPoDatumuIVremenuOpadajuce">OPADAJUĆE </a></td>
+    </tr>
+</table>
+
+
+
+

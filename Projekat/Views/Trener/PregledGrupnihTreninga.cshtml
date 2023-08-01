@@ -1,0 +1,39 @@
+﻿@using Projekat.Models;
+@{ 
+    Layout = "~/Views/Shared/_TrenerLayout.cshtml";
+}
+@{
+    ViewBag.Title = "Pregled Grupnih Treninga";
+}
+
+<h2 class="klasaNaslov">Pregled Grupnih Treninga</h2>
+<p class="klasaUpozorenje">@ViewBag.Message</p>
+<p class="klasaUpozorenje">@ViewBag.Message2</p>
+<p class="klasaUpozorenje">@ViewBag.Message3</p>
+
+
+<table border="1" class="klasa2">
+    <tr>
+        <th>Naziv</th>
+        <th>Tip treninga</th>
+        <th>Trajanje treninga</th>
+        <th>Datum i vreme treninga</th>
+        <th>Maksimalan broj posetilaca</th>
+        <th>Ukupan broj prijavljenih posetilaca</th>
+    </tr>
+    @foreach (GrupniTrening gt in @ViewBag.ListaTreninga)
+    {
+        <tr>
+            <td style="text-align:center">@gt.Naziv</td>
+            <td style="text-align:center">@gt.TipTreninga</td>
+            <td style="text-align:center">@gt.TrajanjeTreninga</td>
+            <td style="text-align:center">@gt.DatumIVremeTreninga</td>
+            <td style="text-align:center">@gt.MaksimalanBrojPosetilaca</td>
+            <td style="text-align:center">@gt.SpisakPosetilaca.Count</td>
+            <td class="klasaDugme"><a href="~/Trener/BrisanjeTreninga?idTreninga=@gt.IDGrupnogTreninga">Izbriši trening</a></td>
+            <td class="klasaDugme"><a href="~/Trener/ModifikacijaTreninga?idTreninga=@gt.IDGrupnogTreninga">Izmeni trening</a></td>
+            <td class="klasaDugme"><a href="~/Trener/VidiPosetioce?idTreninga=@gt.IDGrupnogTreninga">Vidi posetioce</a></td>
+        </tr>
+    }
+</table>
+
